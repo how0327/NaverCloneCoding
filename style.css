@@ -1,0 +1,247 @@
+:root {
+  /* Color */
+  --white-color: #fff;
+  --red-color: #ff0000;
+  --blue-color: #045fd4;
+  --green-color: #1bce60;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+  --black-color: #140a00;
+  --sky-light-color: #d7e2ea;
+  --sky-dark-color: #96b3c2;
+
+  /* size */
+  --padding: 15px;
+
+  /* font size */
+  --font-large: 16px;
+  --font-medium: 12px;
+  --font-small: 10px;
+  --font-micro: 8px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+  background-color: #f5f6f7;
+  width: 100%;
+  height: 100%;
+}
+
+button,
+button:focus {
+  border: none;
+  background-color: #f5f6f7;
+  cursor: pointer;
+  outline: none;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 550px;
+}
+
+/*Header*/
+
+header .navi {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  font-size: var(--font-medium);
+}
+
+header .navi .box {
+  border: var(--grey-dark-color) solid 1px;
+  width: 60px;
+  padding-left: 9px;
+}
+
+header .logo {
+  margin-top: var(--padding);
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 900;
+  color: var(--green-color);
+}
+
+/*Login*/
+.login .loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.login .loginForm .id {
+  border: var(--grey-light-color) solid 2px;
+  width: 300px;
+  height: 35px;
+  margin: 40px auto 0 auto;
+}
+
+.login .loginForm .password {
+  border: var(--grey-light-color) solid 2px;
+  width: 300px;
+  height: 35px;
+  margin: 4px auto 0 auto;
+}
+
+.login .loginForm .submit {
+  background-color: var(--green-color);
+  width: 295px;
+  height: 45px;
+  margin: 10px auto 0 auto;
+}
+.login .loginForm .submit div {
+  font-size: var(--font-large);
+  color: var(--white-color);
+}
+
+.login .etc {
+  display: flex;
+  justify-content: center;
+  font-size: var(--font-medium);
+  color: var(--grey-dark-color);
+  margin-top: var(--padding);
+  border-bottom: 1px solid var(--grey-light-color);
+}
+
+.login .etc .check {
+  margin-right: 50px;
+}
+.login .etc .check i {
+  font-size: 5px;
+  color: var(--grey-dark-color);
+}
+
+.login .etc .on {
+  margin-left: 20px;
+}
+
+.login .etc .on .blue {
+  color: var(--blue-color);
+  font-weight: bolder;
+}
+
+.login .etc .one {
+  margin-left: 5px;
+}
+
+.login .etc .one i {
+  font-size: 2px;
+  color: var(--grey-dark-color);
+}
+
+/* Etc */
+
+.etc .find {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 150px;
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.etc .find button {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.etc .box {
+  margin: auto;
+  width: 300px;
+  height: 120px;
+  background-color: var(--sky-light-color);
+}
+
+.etc .box .title {
+  padding-top: var(--padding);
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.etc .box .info {
+  display: flex;
+  justify-content: center;
+  font-size: var(--font-small);
+}
+
+.etc .box .mdBox {
+  margin: 5px auto;
+  width: 290px;
+  height: 40px;
+  background-color: var(--white-color);
+  font-size: var(--font-small);
+}
+
+.etc .box .mdBox .text {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.etc .box .mdBox i {
+  font-size: var(--font-medium);
+  color: var(--green-color);
+  padding-right: 5px;
+}
+
+.etc .box .mdBox .red {
+  border: #ff0000 solid 2px;
+  padding: 3px 0 0 5px;
+}
+
+.etc .box .mdBox .green {
+  color: var(--green-color);
+  font-weight: border;
+  margin: 4px 0 0 1px;
+}
+
+.etc .box .mdBox .blueBox {
+  margin: 2px 0 0 5px;
+  height: 15px;
+  border: var(--grey-dark-color) solid 2px;
+  background-color: var(--sky-dark-color);
+  font-size: var(--font-small);
+}
+
+/*footer*/
+.footer .btn {
+  display: flex;
+  justify-content: space-around;
+  margin: 80px 50px 20px 50px;
+  font-size: var(--font-medium);
+  color: var(--grey-dark-color);
+}
+
+.footer .btn .bold {
+  font-weight: bolder;
+}
+
+.footer .info {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 120px 20px 120px;
+}
+
+.footer .info .logo {
+  font-size: var(--font-medium);
+  font-weight: bolder;
+  color: var(--green-color);
+}
+
+.footer .info .copyright {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
